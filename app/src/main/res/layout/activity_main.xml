@@ -23,17 +23,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="What is your nickname?"
+        android:hint="@string/editText"
         android:inputType="textPersonName"
         android:textAlignment="center" />
 
     <Button
         android:id="@+id/done_button"
-        style="@style/NameStyle"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Done" />
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@android:color/background_light"
+        android:fontFamily="@font/roboto"
+        android:text="@string/done"
+        app:backgroundTint="@color/colorAccent" />
 
     <TextView
         android:id="@+id/tvResult"
